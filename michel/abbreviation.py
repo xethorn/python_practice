@@ -7,6 +7,10 @@ class Abbrev():
 
     @property
     def initials(self):
-        return ''.join([
-            word.strip()[0] for word in self.string.split(' ')
-            if word.strip()]
+        initials = []
+        for word in self.string.split(' '):
+            word = word.strip()
+            if word: 
+                initials.append(word)
+        return ''.join(initials)
+    
