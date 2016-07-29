@@ -1,7 +1,7 @@
 '''This program takes a string and returns an abbeviation'''
 
 
-class abbrev():
+class Abbrev():
     def __init__(self, string):
         self.string = string
 
@@ -16,6 +16,6 @@ class abbrev():
             # Checking every letter for a space
             # and assigning the next value to a list
             if self.string[count] == ' ':
-                initials.append(self.string[count+1])
+                initials.append(' '+self.string[count+1])
             count += 1
-        return initials
+        return ''.join(initials)
