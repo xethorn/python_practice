@@ -11,6 +11,6 @@ class Abbrev():
         for word in self.string.split(' '):
             word = word.strip()
             if word: 
-                initials.append(word)
+                initials.append(word[0])
         return ''.join(initials)
     
